@@ -1,14 +1,12 @@
 package br.edu.insper.desagil.pi.freela;
 
-import java.time.LocalDate;
-
 public class Tarefa {
     private int id;
     private String descricao;
     Momento inicio;
     Momento fim;
 
-    public Tarefa(int id, String descricao, Momento inicio, Momento fim) {
+    public Tarefa(int id) {
         this.id = id;
         this.descricao = "";
         this.inicio = null;
@@ -31,7 +29,4 @@ public class Tarefa {
         return fim;
     }
 
-//    public void atualiza (Momento m1, Momento m2){
-//
-//    }
 }
