@@ -29,4 +29,8 @@ public class Tarefa {
         return fim;
     }
 
+    public void atualiza(Momento inicio, Momento fim){
+
+    }
+
 }

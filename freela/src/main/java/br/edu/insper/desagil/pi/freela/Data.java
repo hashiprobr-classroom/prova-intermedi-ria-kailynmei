@@ -7,10 +7,10 @@ public class Data extends Momento {
     private int ano;
     private int mes;
     private int dia;
-    Map<Integer, Integer> limite;
+    Map<Integer, Integer> limite = new HashMap<>();
 
     public Data() {
-        Map<Integer, Integer> limite = new HashMap<>();
+//        Map<Integer, Integer> limite = new HashMap<>();
         this.ano = 1970;
         this.mes = 1;
         this.dia = 1;
@@ -26,7 +26,7 @@ public class Data extends Momento {
         limite.put(10, 31);
         limite.put(11, 30);
         limite.put(12, 31);
-        this.limite = limite;
+//        this.limite = limite;
     }
 
     public int getAno() {
@@ -38,16 +38,21 @@ public class Data extends Momento {
     public int getDia() {
         return dia;
     }
-    //
-    public void atualiza (int i1, int i2, int i3){
-        int novoAno = 0;
-        int novoMes = 0;
-        int novoDia = 0;
 
-    }
+//    public void atualiza (int i1, int i2, int i3){
+//        int novoAno = 0;
+//        int novoMes = 0;
+//        int novoDia = 0;
+//
+//    }
 
     @Override
     public int minutos() {
-        return 0;
+        ano = getAno();
+        mes = getMes();
+        dia = getDia();
+
+
+    return 0;
     }
 }

@@ -16,7 +16,7 @@ public class Lista {
 
     public void adiciona(Tarefa tarefa) {
         for (Tarefa t : tarefas) {
-            if (t.getId() == tarefa.getId()) {
+            if (t.getId() != tarefa.getId()) {
                 tarefas.add(tarefa);
             }
         }
