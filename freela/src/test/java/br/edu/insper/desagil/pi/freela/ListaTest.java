@@ -12,9 +12,10 @@ import static org.mockito.Mockito.when;
 
 public class ListaTest {
     private List<Tarefa> tarefas;
+
     @BeforeEach
     void setUp(){
-        tarefas = new ArrayList<>();
+        Tarefa t = mock(Tarefa.class);
     }
 
     @Test
