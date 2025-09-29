@@ -14,11 +14,12 @@ public class Lista {
         return tarefas;
     }
 
-    public void adiciona(Tarefa tarefa){
-    for (Tarefa t : tarefas) {
-        if (t.getId() == tarefa.getId()) {
-            return;}
+    public void adiciona(Tarefa tarefa) {
+        for (Tarefa t : tarefas) {
+            if (t.getId() == tarefa.getId()) {
+                tarefas.add(tarefa);
+            }
         }
-        tarefas.add(tarefa);
     }
 }
+
