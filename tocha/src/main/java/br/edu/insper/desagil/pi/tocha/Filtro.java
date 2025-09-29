@@ -153,7 +153,7 @@ public class Filtro {
         }
     }
 
-    private static void calculaSaida(int altura, int largura, int[][] entrada, double[][] kernel, int[][] saida) {
+    private void calculaSaida(int altura, int largura, int[][] entrada, double[][] kernel, int[][] saida) {
         for (int y = 1; y < altura - 1; y++) {
             for (int x = 1; x < largura - 1; x++) {
                 double s = 0;
